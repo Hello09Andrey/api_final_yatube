@@ -21,6 +21,7 @@ INSTALLED_APPS = [
     'api',
     'posts',
     'djoser',
+    'django_filters',
 ]
 
 MIDDLEWARE = [
@@ -103,3 +104,5 @@ SIMPLE_JWT = {
     'ACCESS_TOKEN_LIFETIME': timedelta(days=5),
     'AUTH_HEADER_TYPES': ('Bearer',),
 }
+
+DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
