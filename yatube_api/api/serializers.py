@@ -25,7 +25,6 @@ class CommentSerializer(serializers.ModelSerializer):
 
 
 class FollowSerializer(serializers.ModelSerializer):
-    requires_context = True
     user = serializers.SlugRelatedField(
         queryset=User.objects.all(),
         slug_field='username',
